@@ -26,10 +26,10 @@ function CredsForm(props) {
 	
         let server = "http://localhost:8118/api"
         if (process.env.REACT_APP_REMOTE) { //set this in .env file: REACT_APP_REMOTE=1
-            server = "https://cjk-backend-skiteskopes.herokuapp.com/api"
+            server = "https://cjk-backend-skiteskopes.herokuapp.com/api/keys"
 	}
         if (process.env.NODE_ENV !== 'development') {
-            server = "https://cjk-backend-skiteskopes.herokuapp.com/api"
+            server = "https://cjk-backend-skiteskopes.herokuapp.com/api/keys"
 	}
 	console.log("server = "+server)
         const url = `${server}/keys`
